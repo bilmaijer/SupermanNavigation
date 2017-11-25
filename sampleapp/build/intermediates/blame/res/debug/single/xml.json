@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/xml/file_provider_paths.xml",
+        "source": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/src/main/res/xml/file_provider_paths.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/xml/file_provider_paths.xml",
+        "source": "/Users/anna/Documents/Code/superman/sampleapp/src/main/res/xml/file_provider_paths.xml"
+    }
+]

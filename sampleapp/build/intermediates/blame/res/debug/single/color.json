@@ -1,0 +1,186 @@
+[
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/anna/.android/build-cache/c8ae9328be5260c8b8e8df404ebea6a30ecb1763/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/anna/.android/build-cache/c8ae9328be5260c8b8e8df404ebea6a30ecb1763/output/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/anna/.android/build-cache/c8ae9328be5260c8b8e8df404ebea6a30ecb1763/output/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/anna/.android/build-cache/c8ae9328be5260c8b8e8df404ebea6a30ecb1763/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/anna/.android/build-cache/c8ae9328be5260c8b8e8df404ebea6a30ecb1763/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/anna/.android/build-cache/c8ae9328be5260c8b8e8df404ebea6a30ecb1763/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/anna/.android/build-cache/73f44b80f6a9c9a9610d7d9c9120e7427d4e9099/output/res/color/abc_btn_colored_text_material.xml"
+    }
+]

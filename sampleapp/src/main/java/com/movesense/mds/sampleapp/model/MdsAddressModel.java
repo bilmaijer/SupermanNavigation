@@ -1,0 +1,28 @@
+package com.movesense.mds.sampleapp.model;
+
+public class MdsAddressModel {
+
+    private final String name;
+    private final String address;
+
+    public MdsAddressModel(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    @Override
+    public String toString() {
+        return "MdsAddressModel{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
+}

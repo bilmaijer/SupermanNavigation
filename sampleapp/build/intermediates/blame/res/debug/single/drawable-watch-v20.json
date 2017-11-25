@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/anna/.android/build-cache/d52b65737d4f5aed1de71619b8da44677c34aa4b/output/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/anna/.android/build-cache/d52b65737d4f5aed1de71619b8da44677c34aa4b/output/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/anna/.android/build-cache/d52b65737d4f5aed1de71619b8da44677c34aa4b/output/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/anna/.android/build-cache/d52b65737d4f5aed1de71619b8da44677c34aa4b/output/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/anna/.android/build-cache/d52b65737d4f5aed1de71619b8da44677c34aa4b/output/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/anna/.android/build-cache/d52b65737d4f5aed1de71619b8da44677c34aa4b/output/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    }
+]

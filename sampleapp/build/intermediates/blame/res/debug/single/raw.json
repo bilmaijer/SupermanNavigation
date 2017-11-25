@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/raw/kompostisettings.xml",
+        "source": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/src/main/res/raw/kompostisettings.xml"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/raw/kompostisettings.xml",
+        "source": "/Users/anna/Documents/Code/superman/sampleapp/src/main/res/raw/kompostisettings.xml"
+    }
+]

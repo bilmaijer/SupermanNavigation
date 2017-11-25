@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/anna/Documents/Code/movesense-mobile-lib/android/samples/sampleapp/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/anna/Documents/Code/superman/sampleapp/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/anna/Documents/Code/superman/sampleapp/src/main/res/mipmap-mdpi/ic_launcher.png"
+    }
+]
