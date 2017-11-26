@@ -104,7 +104,6 @@ public class MultiSubscribeActivity extends AppCompatActivity implements BleMana
                                         "y: %.6f", arrayData.y));
                                 zAxisLinearAccTextView.setText(String.format(Locale.getDefault(),
                                         "z: %.6f", arrayData.z));
-
                             }
                         }
 

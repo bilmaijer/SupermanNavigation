@@ -1,11 +1,12 @@
 package com.movesense.mds.sampleapp.example_app_using_mds_api.tests;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
+import android.os.Vibrator;
 import android.support.annotation.ColorRes;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
@@ -38,20 +39,14 @@ import com.movesense.mds.sampleapp.R;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.FormatHelper;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.logs.LogsManager;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.model.InfoResponse;
-import com.movesense.mds.sampleapp.example_app_using_mds_api.model.LinearAcceleration;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.model.MagneticField;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.model.MovesenseConnectedDevices;
 import com.polidea.rxandroidble.RxBleDevice;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Locale;
-import java.util.Timer;
-import java.util.TimerTask;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -103,8 +98,18 @@ public class MagneticFieldTestActivity extends AppCompatActivity implements BleM
     double avgY;
     double avgZ;
     double deg;
-    boolean isBlinking = false;
+    boolean isWaitingBlinking = false;
     int blinkDelay = 1000;
+    boolean ledOn = false;
+    int blinkFreq = 2000;
+    Vibrator vibrator;
+    int vibrateSpeed = 3;
+    boolean canVibrate = false;
+    double minY = -277;
+    double maxY = -229;
+    double minX = 37;
+    double maxX = 88;
+    double balanceZ = -70;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,6 +134,7 @@ public class MagneticFieldTestActivity extends AppCompatActivity implements BleM
         mConnectedDeviceSwVersionTextView.setText("Sw version: " + MovesenseConnectedDevices.getConnectedDevice(0)
                 .getSwVersion());
 
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         xAxisTextView.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
         yAxisTextView.setTextColor(getResources().getColor(android.R.color.holo_green_dark));
@@ -199,10 +205,14 @@ public class MagneticFieldTestActivity extends AppCompatActivity implements BleM
 
         return heading;*/
 
-        double value = x < 21 ? Math.abs(y) : 84 - Math.abs(y);
+        double xCentre = minX + Math.abs((maxX - minX)/2);
+        double yDiff = Math.abs(maxY - minY);
+        double yOnCircle = Math.abs(maxY - y);
+
+        double value = x < xCentre ? yOnCircle : yDiff + (yDiff - Math.abs(yOnCircle));
 
 
-        return (90 / 21) * value;
+        return (90 / (yDiff / 2)) * value;
 
     }
 
@@ -228,7 +238,6 @@ public class MagneticFieldTestActivity extends AppCompatActivity implements BleM
                             if (magneticField != null) {
 
                                 MagneticField.Array arrayData = magneticField.body.array[0];
-
 
                                 readingsX.add(arrayData.x);
                                 readingsY.add(arrayData.y);
@@ -273,12 +282,11 @@ public class MagneticFieldTestActivity extends AppCompatActivity implements BleM
         public void run() {
       /* do what you need to do */
 
-
+            avgZ = calcAvg(readingsZ);
             avgX = calcAvg(readingsX);
             avgY = calcAvg(readingsY);
-            avgZ = calcAvg(readingsZ);
 
-            if (avgX == 0 || avgY == 0 || avgZ == 0) {
+            if (avgX == -1 || avgY == -1 || avgZ == -1) {
                 handler.postDelayed(this, 500);
 
                 return;
@@ -299,56 +307,49 @@ public class MagneticFieldTestActivity extends AppCompatActivity implements BleM
             readingsY.clear();
             readingsZ.clear();
 
+
+            if (avgZ < -60) {
+                canVibrate = true;
       /* and here comes the "trick" */
+
+                if (Math.abs(deg - 25) < 9 && vibrateSpeed != 0 && canVibrate) {
+                    Log.i("MagneticVibrate", "vibrate 1");
+                    vibrateSpeed = 0;
+                    long[] pattern = {0, 100, 100};
+                    vibrator.vibrate(pattern, 0);
+                } else if (Math.abs(deg - 25) < 45 && vibrateSpeed != 1 && canVibrate) {
+                    Log.i("MagneticVibrate", "vibrate 2");
+
+                    vibrateSpeed = 1;
+                    long[] pattern = {0, 100, (long) Math.abs(deg - 25) * 40};
+                    vibrator.vibrate(pattern, 0);
+                } else if ( canVibrate && vibrateSpeed != 2) {
+                    Log.i("MagneticVibrate", "vibrate 3");
+
+                    vibrateSpeed = 2;
+                    long[] pattern = {0, 100, 2000};
+                    vibrator.vibrate(pattern, 0);
+                }
+            } else if (canVibrate){
+                Log.i("MagneticVibrate", "vibrate cancel");
+
+                canVibrate = false;
+                vibrator.vibrate(100);
+                vibrator.cancel();
+            }
+
             handler.postDelayed(this, 500);
 
-            if (!isBlinking && Math.abs(25 - deg) < 9) {
-                handler.postDelayed(runnableBlink, blinkDelay);
-            }
+
         }
     };
-
-    private Runnable runnableBlink = new Runnable() {
-        @Override
-        public void run() {
-      /* do what you need to do */
-            isBlinking = false;
-
-            onChangeLed(true);
-
-      /* and here comes the "trick" */
-            handler.postDelayed(this, blinkDelay);
-            handler.postDelayed(runnableTurnOffBlink, 100);
-            isBlinking = true;
-        }
-    };
-
-    private Runnable runnableTurnOffBlink = new Runnable() {
-        @Override public void run() {
-            onChangeLed(false);
-        }
-    };
-
-    public void onChangeLed(boolean isChecked) {
-        Mds.builder().build(this).put(MdsRx.SCHEME_PREFIX
-                        + MovesenseConnectedDevices.getConnectedDevice(0).getSerial() + LED_PATH
-                , LED_PARAMETER + isChecked + "}", new MdsResponseListener() {
-                    @Override
-                    public void onSuccess(String data) {
-                        Log.d(LOG_TAG, "onSuccess: " + data);
-                    }
-
-                    @Override
-                    public void onError(MdsException error) {
-                        Log.e(LOG_TAG, "onError()", error);
-
-                    }
-                });
-    }
 
     private double calcAvg(List<Double> list) {
+        if (list.isEmpty()) {
+            return -1;
+        }
         double sum = 0;
-        double listSize = list.isEmpty() ? 1 : list.size();
+        double listSize = list.size();
 
 
         for (double num : list) {
@@ -384,6 +385,9 @@ public class MagneticFieldTestActivity extends AppCompatActivity implements BleM
     @Override
     protected void onPause() {
         super.onPause();
+        canVibrate = false;
+        vibrator.vibrate(100);
+        vibrator.cancel();
     }
 
     @Override
@@ -392,6 +396,8 @@ public class MagneticFieldTestActivity extends AppCompatActivity implements BleM
 
         unSubscribe();
 
+        vibrator.vibrate(100);
+        vibrator.cancel();
         BleManager.INSTANCE.removeBleConnectionMonitorListener(this);
     }
 

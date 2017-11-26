@@ -28,6 +28,7 @@ import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.HeartRateTest
 import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.LedTestActivity;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.LinearAccelerationTestActivity;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.MagneticFieldTestActivity;
+import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.MapsActivity;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.MultiSubscribeActivity;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.TemperatureTestActivity;
 import com.movesense.mds.sampleapp.model.MdsConnectedDevice;
@@ -92,6 +93,7 @@ public class SensorListActivity extends AppCompatActivity implements View.OnClic
 
         ArrayList<SensorListItemModel> sensorListItemModels = new ArrayList<>();
 
+        sensorListItemModels.add(new SensorListItemModel("Map", R.drawable.linear_acc2));
         sensorListItemModels.add(new SensorListItemModel(getString(R.string.linear_acceleration_name), R.drawable.linear_acc2));
         sensorListItemModels.add(new SensorListItemModel(getString(R.string.led_name), R.drawable.led2));
         sensorListItemModels.add(new SensorListItemModel(getString(R.string.temperature_name), R.drawable.temperature2));
@@ -136,7 +138,11 @@ public class SensorListActivity extends AppCompatActivity implements View.OnClic
 
         subscriptions.unsubscribe();
 
-        if (getString(R.string.led_name).equals(sensorName)) {
+        if ("Map".equals(sensorName)) {
+            startActivity(new Intent(SensorListActivity.this, MapsActivity.class));
+            return;
+        }
+        else if (getString(R.string.led_name).equals(sensorName)) {
             startActivity(new Intent(SensorListActivity.this, LedTestActivity.class));
             return;
         } else if (getString(R.string.linear_acceleration_name).equals(sensorName)) {

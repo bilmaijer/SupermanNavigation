@@ -30,6 +30,7 @@ import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.HeartRateTest
 import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.LedTestActivity;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.LinearAccelerationTestActivity;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.MagneticFieldTestActivity;
+import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.MapsActivity;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.MultiSubscribeActivity;
 import com.movesense.mds.sampleapp.example_app_using_mds_api.tests.TemperatureTestActivity;
 import com.movesense.mds.sampleapp.model.MdsConnectedDevice;
@@ -147,7 +148,7 @@ public class SelectTestActivity extends AppCompatActivity {
 
         TestItemList manualTestItemListClicked = testItemListArrayList.get(position);
         if ("Directions".equals(manualTestItemListClicked.getName())) {
-            startActivity(new Intent(SelectTestActivity.this, DirectionsActivity.class));
+            startActivity(new Intent(SelectTestActivity.this, MapsActivity.class));
             return;
         }
         else if (getString(R.string.led_name).equals(manualTestItemListClicked.getName())) {
